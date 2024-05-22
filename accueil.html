@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">MonSite</div>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li class="navbar-item"><a href="#">Accueil</a></li>
+                <li class="navbar-item"><a href="#">À propos</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="upload-section">
+            <h1>Upload et Traitement d'Image</h1>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="image-input" name="image">
+                <button type="button" id="custom-upload-button">Choisissez un fichier</button>
+                <button type="submit" style="opacity: 0;">Upload</button>
+            </form>
+        </section>
+        
+        <section class="result-section">
+            <h2>Résultat de l'Image Retouchée</h2>
+            <div id="result-box"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
